@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYTUŁ</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="pole"/>
+        <button type="submit">Pokaż</button>
+    </form>
+
+    <div class="wynik"></div>
+
+    <script>
+        //odwolujemy sie do formularza, pobieramy ten formluarz
+        const formularz = document.querySelector('form');
+
+        //odwolujemy sie do diva
+        const div= document.querySelector('.wynik');
+
+        //przypisujemy zdarzenie do naszego formularza ktore uruchomi funkcje przez przegladarke, zdarzenie nazywa sie submit
+        formularz.addEventListener('submit', (e)=>{
+            //zatrzymujemy domyslna akcje przegladarki w przypdaku
+            e.preventDefault();
+
+
+                //odwolujemy sie do pola w formularzu i pobieramy waosc
+                const wartoscpolafomularza = document.querySelector('input[name="pole"]').value;
+
+                if(wartoscpolafomularza > 5, != 6 , != 12, = 0) {
+                    div.textContent = 'Liczba jest wieksza od 5';
+
+                }
+                else{
+
+                    div.textContent = 'Liczba jest nieparzysta';
+                }
+
+
+
+                
+
+                //wartosc pola formularza wyrzucamy do diva
+                //div.textContent = wartoscpolafomularza;
+            
+        });
+
+    </script>
+</body>
+</html>
