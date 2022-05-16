@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1652699943 source:c:\users\zs4\desktop\pytanie\main.cpp
+	"Pytanie.h"
+
+1652700387 c:\users\zs4\desktop\pytanie\pytanie.h
+	<iostream>
+
+1652700277 source:c:\users\zs4\desktop\pytanie\pytanie.cpp
+	"Pytanie.h"
+	<iostream>
+	<fstream>
+
